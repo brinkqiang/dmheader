@@ -20,7 +20,7 @@ IF (WIN32)
             IF (_cpp_latest_flag_supported)
                 ADD_COMPILE_OPTIONS("/std:c++latest")
             ENDIF()
-    	ENDIF()    ENDIF()
+    	ENDIF()
 ELSEIF (APPLE)  
     MESSAGE(STATUS "Now is Apple systems")  
 
@@ -68,14 +68,5 @@ IF (WIN32)
     LIST(APPEND DMHEADER_SOURCES)
 ENDIF(WIN32)
 
-ADD_LIBRARY(dmheader ${DMHEADER_SOURCES})
-
-FILE(GLOB_RECURSE DMHEADERTEST_SOURCES
-${CMAKE_CURRENT_SOURCE_DIR}/test/*.cpp
-${CMAKE_CURRENT_SOURCE_DIR}/test/*.cc
-${CMAKE_CURRENT_SOURCE_DIR}/test/*.c
-${CMAKE_CURRENT_SOURCE_DIR}/test/*.hpp
-${CMAKE_CURRENT_SOURCE_DIR}/test/*.h)
-
-ADD_EXECUTABLE(dmheadertest ${DMHEADERTEST_SOURCES})
-TARGET_LINK_LIBRARIES(dmheadertest dmheader)
+ADD_EXECUTABLE(dmheader ${DMHEADER_SOURCES})
+TARGET_LINK_LIBRARIES(dmheader)
