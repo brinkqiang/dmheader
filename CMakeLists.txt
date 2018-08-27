@@ -21,6 +21,7 @@ IF (WIN32)
                 ADD_COMPILE_OPTIONS("/std:c++latest")
             ENDIF()
     	ENDIF()
+    ENDIF()
 ELSEIF (APPLE)  
     MESSAGE(STATUS "Now is Apple systems")  
 
