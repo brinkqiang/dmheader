@@ -139,7 +139,7 @@ public:
     , m_verbose (false)
     , m_checkSystemIncludes (false)
   {
-    setWildcards ("*.cpp;*.c;*.h;*.mm;*.m");
+    setWildcards ("*.cpp;*.cc;*.c;*.hpp;*.h;*.mm;*.m");
   }
 
   const String name () const
