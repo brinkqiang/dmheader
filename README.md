@@ -22,7 +22,6 @@ dmheader
 dmheader -p a.h b.h c.h
 dmheader -p a.cpp b.cpp c.cpp
 ```
-
 ## Contacts
 [![Join the chat](https://badges.gitter.im/brinkqiang/dmheader/Lobby.svg)](https://gitter.im/brinkqiang/dmheader)
 
